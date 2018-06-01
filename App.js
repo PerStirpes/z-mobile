@@ -1,7 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { createSwitchNavigator } from 'react-navigation';
 
-export default class App extends React.Component {
+import Loader from './components/Loader';
+import SplashScreen from './screens/SplashScreen';
+import HomeScreen from './screens/HomeScreen';
+class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -12,6 +16,16 @@ export default class App extends React.Component {
     );
   }
 }
+
+export default (Switch = createSwitchNavigator(
+  {
+    Splash: SplashScreen,
+    Home: HomeScreen,
+  },
+  {
+    initialRouteName: 'Splash',
+  },
+));
 
 const styles = StyleSheet.create({
   container: {

@@ -11,13 +11,13 @@ export default class SplashScreen extends React.Component {
   constructor() {
     super();
 
-    this._image = require('../assets/images/white-bg.png');
+    this._image = require('../assets/images/black-zeit.png');
   }
 
   componentDidMount() {
     this.resetAnimation();
   }
-
+  // TODO: remove reset animation
   resetAnimation() {
     this.setState({
       appReady: false,
