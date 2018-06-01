@@ -10,26 +10,29 @@ export default class SplashScreen extends React.Component {
 
   constructor() {
     super();
-
     this._image = require('../assets/images/black-zeit.png');
   }
 
   componentDidMount() {
-    this.resetAnimation();
-  }
-  // TODO: remove reset animation
-  resetAnimation() {
-    this.setState({
-      appReady: false,
-      rootKey: Math.random(),
-    });
-
     setTimeout(() => {
       this.setState({
         appReady: true,
       });
     }, 2000);
   }
+  // TODO: remove reset animation
+  // resetAnimation() {
+  //   this.setState({
+  //     appReady: false,
+  //     rootKey: Math.random(),
+  //   });
+
+  //   setTimeout(() => {
+  //     this.setState({
+  //       appReady: true,
+  //     });
+  //   }, 2000);
+  // }
 
   render() {
     return (

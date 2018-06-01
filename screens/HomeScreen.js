@@ -13,8 +13,8 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Button
-          title="Play Song"
-          onPress={() => this.props.navigation.navigate('SplashScreen')}
+          title="Remix"
+          onPress={() => this.props.navigation.navigate('Splash')}
         />
       </View>
     );
