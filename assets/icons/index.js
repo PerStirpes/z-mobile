@@ -120,10 +120,6 @@ class Logo extends React.PureComponent {
   }
 }
 
-Logo.contextTypes = {
-  darkBg: PropTypes.bool,
-};
-
 const PermalinkIcon = () => (
   <svg
     width="11px"
@@ -253,6 +249,7 @@ const Deploy = () => (
     />
   </svg>
 );
+
 const Done = () => (
   <svg
     width="12"
@@ -409,6 +406,7 @@ const Dashed = () => (
     </g>
   </svg>
 );
+
 export {
   External,
   CloseWindow,
