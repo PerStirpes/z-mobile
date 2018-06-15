@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, View, Button } from 'react-native';
+import React from 'react'
+import { StyleSheet, View, Button } from 'react-native'
 import {
   External,
   CloseWindow,
@@ -21,7 +21,7 @@ import {
   Cog,
   Question,
   Dashed,
-} from '../assets/icons/index';
+} from '../assets/icons/index'
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -30,7 +30,7 @@ export default class HomeScreen extends React.Component {
       color: '#444',
       fontWeight: 'normal',
     },
-  };
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -54,7 +54,10 @@ export default class HomeScreen extends React.Component {
           title="Remix"
           onPress={() => this.props.navigation.navigate('Splash')}
         />
-
+        <Button
+          title="Deployments"
+          onPress={() => this.props.navigation.navigate('Deployment')}
+        />
         {/* 
          
           <PermalinkIcon />
@@ -67,7 +70,7 @@ export default class HomeScreen extends React.Component {
          <CloseWindow />
        */}
       </View>
-    );
+    )
   }
 }
 
@@ -83,4 +86,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignContent: 'center',
   },
-});
+})
