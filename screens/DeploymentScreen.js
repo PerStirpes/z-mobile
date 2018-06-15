@@ -1,4 +1,4 @@
-//Todo: change button to touchable
+//Todo: change button to touchable && styling
 import React from 'react'
 import {
   ActivityIndicator,
@@ -21,6 +21,9 @@ const headers = {
 }
 
 export default class getAllDeployments extends React.Component {
+  static navigationOptions = {
+    title: 'now ls',
+  }
   state = {
     isLoading: true,
     dataSource: null,

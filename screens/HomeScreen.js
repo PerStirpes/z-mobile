@@ -1,3 +1,4 @@
+// TODO: remove extra svg
 import React from 'react'
 import { StyleSheet, View, Button } from 'react-native'
 import {
