@@ -1,3 +1,4 @@
+//Todo: change button to touchable
 import React from 'react'
 import {
   ActivityIndicator,
@@ -12,7 +13,7 @@ import {
 
 import { Constants, WebBrowser } from 'expo'
 
-const token = 'Ds2B354PCTMChyYRF7t1eEaW'
+const token = ''
 const getDeployments = 'https://api.zeit.co/v2/now/deployments'
 const headers = {
   Accept: 'application/json',
